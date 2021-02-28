@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+
+<!-- head -->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>MSc Finance & Big Data - Data visualization 2020</title>
+
+  <!-- bulma and font awesome -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" crossorigin="anonymous">
+</head>
+
+<!-- body -->
+<body>
+
+  <!-- header -->
+  <section class="hero is-link is-bold">
+    <!-- todo: change assignment and name -->
+    <div class="hero-body">
+      <div class="container">
+        <h1 class="title">
+          Data Visualization - Disney Movies
+        </h1>
+        <h2 class="subtitle">
+          Baptiste Paulet
+        </h2>
+      </div>
+    </div>
+
+    <!-- change navigation if needed -->
+    <div class="hero-foot">
+      <div class="container">
+        <nav class="navbar" role="navigation" aria-label="main navigation">
+
+          <div class="navbar-brand">
+            <a class="navbar-item" href="#top">
+              <span class="icon">
+                <i class="fas fa-home"></i>
+              </span>
+              <span>Home</span>
+            </a>
+          </div>
+
+          <div id="main-navbar" class="navbar-menu">
+            <a class="navbar-item" href="#viz1">
+              <span class="icon">
+                <i class="fas fa-chart-area"></i>
+              </span>
+              <span>Disney Movies Evolution</span>
+            </a>
+            <a class="navbar-item" href="#viz2">
+              <span class="icon">
+                <i class="fas fa-chart-line"></i>
+              </span>
+              <span>Average Cost Evolution</span>
+            </a>
+          </div>
+
+          <div class="navbar-end">
+            <a class="navbar-item" href="#about">
+              <span class="icon">
+                <i class="fas fa-info-circle"></i>
+              </span>
+              <span>About</span>
+            </a>
+          </div>
+
+        </nav>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container content">
+      <!-- modify if necessary (move visualizations in separate pages) -->
+      <h2 id="viz1">Disney Movies Evolution</h2>
+      <!-- how to insert a static image <img src="XOM.png">-->
+        <div id="disney_fig_1" class="container content"> <!-- Dynamic visualization goes here --> </div>
+      <h2 id="viz2">Average Cost Evolution</h2>
+        <div id="disney_fig_2" class="container content"> <!-- Dynamic visualization goes here --> </div>
+      <h3>Interpretation</h3>
+
+      <p>
+          Here I represent the <strong>margin evolution</strong> for Disney Movies. We can see on the first graph that the ratio between profit and cost have been decreasing through years while ratings, showed by color, stayed constant. Even if Box Office turnover have strongly increased, costs have also <strong>step-up exponentially</strong>, deterioring the profit ratio.
+      </p>
+
+      <h3>Discussion</h3>
+
+      <p>
+        Disney has been for a long time the principal actor of animation industry, they are now facing new and numerous concurrents. The cost curve give us a clue about how budgets have to be increased since the movie market was more <strong>saturated</strong>.</p>
+       <p>  
+           This study have been conducted by first analysing the dataset with <strong>Python</strong>, mixing and viewing diverses combinations of variables. The principal challenge was next to obtain clean graphs in <strong>JavaScript</strong>. For the first graph, I used pyplot in scatter mode setting also variables for size and color of markers. The second graph is made with a basic line plot.
+      
+      </p>
+
+      <h3>Sources</h3>
+
+      <p>
+
+<a href="https://www.kaggle.com/therealsampat/disney-movies-dataset">
+                <span>Disney Movies Dataset was created by Sameer Patel on Kaggle</span>
+              </a>
+        
+      </p>
+    </div>
+  </section>
+
+  <hr class="container">
+
+  <!-- about section -->
+  <!-- fill in, or link to a personal web page  -->
+  <section class="section">
+    <div class="container content">
+      <h2 id="about">
+        About Me
+      </h2>
+
+      <div class="media">
+        <div class="media-left">
+          <p class="image is-128x128">
+            <!-- replace with your profile image -->
+            <img src="https://avatars.githubusercontent.com/Babasco" alt="Avatar">
+          </p>
+        </div>
+
+        <div class="media-content">
+            <p>
+              <!-- replace with your information -->
+              <strong>Baptiste Paulet</strong>
+              <br/>
+                  I am passionately discovering the power of data and it's representation. I have a financial backgroung and look to enhance my understanting of financial markets with appropriate tools. 
+              <br/>
+              <!-- find brand icons at: https://fontawesome.com/icons?d=gallery&s=brands&m=free -->
+              <a href="https://github.com/Babasco/">
+                <span class="fab fa-github"></span>
+                <span>Github</span>
+              </a>
+              &bullet;
+              <a href="https://www.linkedin.com/in/baptiste-paulet-976b58100/">
+                <span class="fab fa-linkedin"></span>
+                <span>LinkedIn</span>
+              </a>
+            </p>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <footer class="footer">
+    <div class="content has-text-centered">
+      <small>
+        <a href="#top">
+          <span class="fas fa-arrow-up"></span>
+          <span>Back to Top</span>
+        </a>
+        <br/>
+        <a href="https://www.neoma-bs.fr/formations/masteres-specialises-masters-of-science-temps-partiel/msc-in-finance-and-big-data/presentation-du-programme">MSc Finance & Big Data / Data visualization</a>
+        &bullet;
+        <a href="https://neoma-bs.fr/">Neoma Business School</a>
+      </small>
+    </div>
+  </footer>
+    
+<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+<script src="disney_fig1.js"></script>
+<script src="disney_fig2.js"></script>
+
+    
+    
+</body>
+</html>
